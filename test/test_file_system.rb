@@ -1,7 +1,11 @@
 require 'helper'
 
 class TestFileSystem < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  def setup
+    @fs = FileSystem.root
+  end
+  
+  should "be the root node of the modeled file system" do
+    assert_equal "", @fs.name
   end
 end

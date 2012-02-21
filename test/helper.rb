@@ -13,6 +13,9 @@ require 'shoulda'
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'file_system'
+require 'node'
+require 'file_node'
+require 'folder_node'
 
 class Test::Unit::TestCase
 end
